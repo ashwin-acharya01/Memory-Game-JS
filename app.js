@@ -88,7 +88,7 @@ function selectCard(){
     cardSeleted.push(imageArray[cardNo].name);
     selectCardId.push(cardNo);
     if(cardSeleted.length === 2 && selectCardId[0] !== selectCardId[1]){
-        setTimeout(checkForMatch,180);
+        setTimeout(checkForMatch,300);
     }
     else if(cardSeleted.length === 2 && selectCardId[0] === selectCardId[1]){        
         resultDisplay.innerHTML = "Can't select the same image twice!!!";
