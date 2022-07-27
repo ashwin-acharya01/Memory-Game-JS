@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+        <link href="Images/memory.png" rel="icon"/>
+        <title>Memory Game</title>
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Memory Game</h1>
+        </div>
+        <div class="score">
+            <h2>Your Score: <span id="points">0</span> | High Score: <span id="highPoints">0</span> </h2>
+        </div>
+        <div id="grid"></div>
+        <div class="displayResult">
+            <h2 id="result"></h2>
+            <button id="replayBtn">Reset</button>
+        </div>
+        <audio src="Audio/sfx-victory6.mp3" id="victory"></audio>
+
+        <script src="app.js"></script>
+    </body>
+</html>
+

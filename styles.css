@@ -1,0 +1,66 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+    color:aliceblue;
+}
+#grid{
+    width: 440px;
+    height:330px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color:black;
+    text-transform: uppercase;
+}
+.score{
+    text-align: center;
+}
+.displayResult{
+    text-align: center;
+}
+#replayBtn{
+    background-color: coral;
+    width:5em;
+    height:3em;
+    text-align: center;
+    text-transform: uppercase;
+    border:none;
+    border-radius:0.5rem;
+    transition-duration: 0.7s;
+}
+@media (max-width: 760px){
+    #grid{
+        width:80%;
+        height:50vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+    #grid img{
+        width: 25%;
+        height: 20%;
+    }
+    .heading{
+        font-size: 1em;
+    }
+    .score h2{
+        font-size: 1em;
+    }
+}
+
+#replayBtn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 0.3rem rgb(255, 92, 33);
+}
+
